@@ -1,0 +1,420 @@
+{
+  "links": [
+    {
+      "id": 1,
+      "slug": "home",
+      "active": true
+    },
+    {
+      "id": 3,
+      "slug": "menu",
+      "active": true
+    },
+    {
+      "id": 2,
+      "slug": "about-us",
+      "active": true
+    },
+    {
+      "id": 4,
+      "slug": "team",
+      "active": true
+    },
+    {
+      "id": 5,
+      "slug": "gallery",
+      "active": true
+    },
+    {
+      "id": 8,
+      "slug": "contact-us",
+      "active": true
+    },
+    {
+      "id": 6,
+      "slug": "blog",
+      "active": true
+    },
+    {
+      "id": 7,
+      "slug": "reservation",
+      "active": true
+    }
+  ],
+
+  "banner": {
+    "title": "Dinner with us",
+    "textTitle": ["Family_", "Officemates_"],
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+    "thumbnail": "https://technext.github.io/food-funday/images/banner.jpg"
+  },
+
+  "about-us": {
+    "name": "About Us",
+    "title": "IT STARTED, QUITE SIMPLY, LIKE THIS...",
+    "thumbnailSmall": "https://technext.github.io/food-funday/images/about-inset.jpg",
+    "thumbnailBig": "https://technext.github.io/food-funday/images/about-main.jpg"
+  },
+
+  "today": [
+    {
+      "todayId": 1,
+      "thumbnail": "https://technext.github.io/food-funday/images/special-menu-2.jpg",
+      "name": "ITALIAN PIZZA",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod"
+    },
+    {
+      "todayId": 2,
+      "thumbnail": "https://technext.github.io/food-funday/images/special-menu-1.jpg",
+      "name": "VEG. ROLL",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod"
+    },
+    {
+      "todayId": 3,
+      "thumbnail": "https://technext.github.io/food-funday/images/special-menu-3.jpg",
+      "name": "SALMON STEAK",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod"
+    }
+  ],
+
+  "menu": {
+    "name": "Our Menu",
+    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+    "menu": [
+      {
+        "menuId": 1,
+        "label": "STARTERS",
+        "thumbnail": "https://cdn-icons-png.flaticon.com/32/457/457961.png"
+      },
+      {
+        "menuId": 2,
+        "label": "MAIN DISHES",
+        "thumbnail": "https://cdn-icons-png.flaticon.com/32/1206/1206869.png"
+      },
+      {
+        "menuId": 3,
+        "label": "DESERTS",
+        "thumbnail": "https://cdn-icons-png.flaticon.com/32/5045/5045798.png"
+      },
+      {
+        "menuId": 4,
+        "label": "DRINKS",
+        "thumbnail": "https://cdn-icons-png.flaticon.com/32/1046/1046887.png"
+      }
+    ]
+  },
+
+  "products": [
+    {
+      "menuId": 1,
+      "id": 1,
+      "name": "GARLIC BREAD",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+      "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-01.jpg",
+      "price": 11
+    },
+    {
+      "menuId": 1,
+      "id": 2,
+      "name": "MIXED SALAD",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+      "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-02.jpg",
+      "price": 11.5
+    },
+    {
+      "menuId": 1,
+      "id": 3,
+      "name": "BBQ CHICKEN WINGS",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+      "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-03.jpg",
+      "price": 11.3
+    },
+    {
+      "menuId": 1,
+      "id": 4,
+      "name": "BBQ CHICKEN WINGS",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+      "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-03.jpg",
+      "price": 10
+    },
+    {
+      "menuId": 1,
+      "id": 5,
+      "name": "BBQ CHICKEN WINGS",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+      "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-02.jpg",
+      "price": 11
+    },
+    {
+      "menuId": 2,
+      "id": 6,
+      "name": "MEAT FEAST PIZZA",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+      "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-04.jpg",
+      "price": 11
+    },
+    {
+      "menuId": 2,
+      "id": 7,
+      "name": "CHICKEN TIKKA MASALA",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+      "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-05.jpg",
+      "price": 11
+    },
+    {
+      "menuId": 2,
+      "id": 8,
+      "name": "SPICY MEATBALLS",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+      "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-06.jpg",
+      "price": 11
+    },
+    {
+      "menuId": 3,
+      "id": 9,
+      "name": "CHOCOLATE FUDGECAKE",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+      "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-07.jpg",
+      "price": 11
+    },
+    {
+      "menuId": 3,
+      "id": 10,
+      "name": "CHICKEN TIKKA MASALA",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+      "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-08.jpg",
+      "price": 100
+    },
+    {
+      "menuId": 3,
+      "id": 11,
+      "name": "CHICKEN TIKKA MASALA",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+      "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-09.jpg",
+      "price": 11
+    },
+    {
+      "menuId": 4,
+      "id": 12,
+      "name": "MEAT FEAST PIZZA",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+      "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-10.jpg",
+      "price": 40
+    },
+    {
+      "menuId": 4,
+      "id": 13,
+      "name": "MEAT FEAST",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+      "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-10.jpg",
+      "price": 20
+    },
+    {
+      "menuId": 4,
+      "id": 14,
+      "name": "PIZZA",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+      "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-08.jpg",
+      "price": 18
+    }
+  ],
+
+  "team": {
+    "name": "Our Team",
+    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+    "team": [
+      {
+        "teamId": 1,
+        "name": "John Doggett",
+        "thumbnail": "https://technext.github.io/food-funday/images/staff-02.jpg",
+        "description": "Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.",
+        "contact": [
+          {
+            "id": 1,
+            "thumbnail": "https://cdn-icons-png.flaticon.com/24/665/665209.png",
+            "link": "https://www.facebook.com/vhnlong99"
+          },
+          {
+            "id": 2,
+            "thumbnail": "https://cdn-icons-png.flaticon.com/24/665/665228.png",
+            "link": "https://www.facebook.com/vhnlong99"
+          },
+          {
+            "id": 3,
+            "thumbnail": "https://cdn-icons-png.flaticon.com/24/665/665212.png",
+            "link": "https://www.facebook.com/vhnlong99"
+          }
+        ]
+      },
+      {
+        "teamId": 2,
+        "name": "Jeffrey Spender",
+        "thumbnail": "https://technext.github.io/food-funday/images/staff-02.jpg",
+        "description": "Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.",
+        "contact": [
+          {
+            "id": 1,
+            "thumbnail": "https://cdn-icons-png.flaticon.com/24/665/665209.png",
+            "link": "https://www.facebook.com/vhnlong99"
+          },
+          {
+            "id": 2,
+            "thumbnail": "https://cdn-icons-png.flaticon.com/24/665/665228.png",
+            "link": "https://www.facebook.com/vhnlong99"
+          },
+          {
+            "id": 3,
+            "thumbnail": "https://cdn-icons-png.flaticon.com/24/665/665212.png",
+            "link": "https://www.facebook.com/vhnlong99"
+          }
+        ]
+      },
+      {
+        "teamId": 3,
+        "name": "Monica Reyes",
+        "thumbnail": "https://technext.github.io/food-funday/images/staff-03.jpg",
+        "description": "Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.",
+        "contact": [
+          {
+            "id": 1,
+            "thumbnail": "https://cdn-icons-png.flaticon.com/24/665/665209.png",
+            "link": "https://www.facebook.com/vhnlong99"
+          },
+          {
+            "id": 2,
+            "thumbnail": "https://cdn-icons-png.flaticon.com/24/665/665228.png",
+            "link": "https://www.facebook.com/vhnlong99"
+          },
+          {
+            "id": 3,
+            "thumbnail": "https://cdn-icons-png.flaticon.com/24/665/665212.png",
+            "link": "https://www.facebook.com/vhnlong99"
+          }
+        ]
+      }
+    ]
+  },
+
+  "gallery": {
+    "title": "Our Gallery",
+    "description": "There are many variations of passages of Lorem Ipsum available",
+    "thumbnails": [
+      "https://technext.github.io/food-funday/images/gallery_01.jpg",
+      "https://technext.github.io/food-funday/images/gallery_02.jpg",
+      "https://technext.github.io/food-funday/images/gallery_03.jpg",
+      "https://technext.github.io/food-funday/images/gallery_04.jpg",
+      "https://technext.github.io/food-funday/images/gallery_05.jpg",
+      "https://technext.github.io/food-funday/images/gallery_06.jpg",
+      "https://technext.github.io/food-funday/images/gallery_07.jpg",
+      "https://technext.github.io/food-funday/images/gallery_08.jpg",
+      "https://technext.github.io/food-funday/images/gallery_09.jpg",
+      "https://technext.github.io/food-funday/images/gallery_10.jpg"
+    ]
+  },
+
+  "blog": {
+    "name": "Our Blog",
+    "blog": [
+      {
+        "id": 1,
+        "label": "LATEST RECIPES JUST IN!",
+        "thumbnail": "https://technext.github.io/food-funday/images/featured-image-01.jpg"
+      },
+      {
+        "id": 2,
+        "label": "NEW RECRUITS HAVE ARRIVED!",
+        "thumbnail": "https://technext.github.io/food-funday/images/featured-image-02.jpg"
+      },
+      {
+        "id": 3,
+        "label": "BAKING TIPS FROM THE PROS",
+        "thumbnail": "https://technext.github.io/food-funday/images/featured-image-03.jpg"
+      },
+      {
+        "id": 4,
+        "label": "ALL YOUR EGGS BELONG TO US",
+        "thumbnail": "https://technext.github.io/food-funday/images/featured-image-04.jpg"
+      }
+    ]
+  },
+
+  "footer": [
+    {
+      "title": "About Us",
+      "description": "Aenean commodo ligula eget dolor aenean massa. Cum sociis nat penatibu set magnis dis parturient montes.",
+      "contact": [
+        {
+          "link": "https://www.facebook.com/vhnlong99",
+          "thumbnail": "https://cdn-icons-png.flaticon.com/24/2168/2168281.png"
+        },
+        {
+          "link": "https://www.facebook.com/vhnlong99",
+          "thumbnail": "https://cdn-icons-png.flaticon.com/24/1384/1384017.png"
+        }
+      ]
+    },
+    {
+      "title": "New Menu",
+      "menu": [
+        {
+          "menuId": 1,
+          "id": 1,
+          "name": "GARLIC BREAD",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+          "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-01.jpg",
+          "price": 11
+        },
+        {
+          "menuId": 1,
+          "id": 2,
+          "name": "MIXED SALAD",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+          "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-02.jpg",
+          "price": 11.5
+        },
+        {
+          "menuId": 1,
+          "id": 3,
+          "name": "BBQ CHICKEN WINGS",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+          "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-03.jpg",
+          "price": 11.3
+        },
+        {
+          "menuId": 1,
+          "id": 4,
+          "name": "BBQ CHICKEN WINGS",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
+          "thumbnail": "https://technext.github.io/food-funday/images/menu-item-thumbnail-03.jpg",
+          "price": 10
+        }
+      ]
+    },
+    {
+      "title": "Contact Us",
+      "contact": [
+        {
+          "text": "0931905071",
+          "thumbnail": "https://cdn-icons-png.flaticon.com/24/3059/3059561.png"
+        },
+        {
+          "text": "vuhuynhngoclong999@gmail.com",
+          "thumbnail": "https://cdn-icons-png.flaticon.com/24/3178/3178158.png"
+        }
+      ]
+    },
+    {
+      "title": "Opening Hours",
+      "time": [
+        {
+          "day": "Monday - Thursday",
+          "time": "11:00 AM - 9:00 PM"
+        },
+        {
+          "day": "Friday  - Saturday",
+          "time": "11:00 AM - 9:00 PM"
+        }
+      ]
+    }
+  ]
+}
