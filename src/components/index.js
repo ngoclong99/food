@@ -1,4 +1,4 @@
-export * from './Banner';
+export * from './Menu';
 export * from './AboutUs';
 export * from './Blog';
 export * from './Footer';

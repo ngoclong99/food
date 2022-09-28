@@ -1,55 +1,41 @@
-import { menuApi } from '@/api/menu';
-import { HEADER } from '@/utils/constant';
-import { useEffect, useState } from 'react';
-import { useLocation, useParams, useSearchParams } from 'react-router-dom';
+import { bannerApi } from '@/api/banner'
+import { useEffect, useState } from 'react'
+import Skeleton from '@/components/common/Skeleton'
 
-export function Banner({}) {
-  const [loading, setLoading] = useState(false);
-  const [menu, setMenu] = useState(HEADER);
+Banner.propTypes = {}
 
-  const location = useLocation()
-  const params = useParams()
-  const search = useSearchParams()
+export function Banner(props) {
+  const [banner, setBanner] = useState({})
+  const [loading, setLoading] = useState(false)
 
-  const currentMenu = (array = []) => {
-    let newMenu = array.filter((item) => item.active === true);
-    let result = [];
-    for (let index = 0; index < HEADER.length; index++) {
-      for (let index1 = 0; index1 < newMenu.length; index1++) {
-        if (HEADER[index].slug === newMenu[index1].slug) {
-          result.push(HEADER[index]);
-        }
-      }
-    }
-    return result;
-  };
-  const renderMenu = (menu = []) => {
-    return (
-      <div>
-        {menu.map((item) => (
-          <div key={item.slug}>{item.name}</div>
-        ))}
-      </div>
-    );
-  };
-
-  // Fetch current menu
   useEffect(() => {
-    (async () => {
+    ;(async () => {
       try {
-        setLoading(true);
-        const data = await menuApi.getMenu();
-        const newData = currentMenu(data.data);
-        setMenu(newData);
+        setLoading(true)
+        const res = await bannerApi.getBanner()
+        setBanner(res.data)
       } catch (error) {
-        console.log(error);
+        console.log('error', error)
+        setLoading(false)
       }
-      setLoading(false);
-    })();
+      setLoading(false)
+    })()
     return () => {
-      setLoading(false);
-    };
-  }, []);
-
-  return <div>Banner {renderMenu(menu)}</div>;
+      setLoading(false)
+    }
+  }, [])
+  //  style={{ backgroundImage:`url(${banner.thumbnail})` }}
+  return (
+    <>
+      <Skeleton loading={true}>
+        <div>content</div>
+      </Skeleton>
+      {/* <div className="banner">
+        <p> 
+          {banner.title} <span>{banner.textTitle[0]}</span>
+        </p>
+        <p>{banner.description}</p>
+      </div> */}
+    </>
+  )
 }

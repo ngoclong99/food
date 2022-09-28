@@ -1,15 +1,14 @@
-import { Banner } from '@/components';
-
 // import PropTypes from 'prop-types';
 // index.propTypes = {};
 
+import { Banner } from '@/components/Banner'
+
 function index() {
   return (
-    <div>
+    <>
       <Banner />
-      {/* <AboutUs /> */}
-    </div>
-  );
+    </>
+  )
 }
 
-export default index;
+export default index

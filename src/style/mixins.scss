@@ -1,0 +1,33 @@
+@use 'sass:math';
+$breakpoints: (
+  'sm': (
+    min-width: 640px,
+  ),
+  'md': (
+    min-width: 768px,
+  ),
+  'lg': (
+    min-width: 992px,
+  ),
+  'xl': (
+    min-width: 1280px,
+  ),
+) !default;
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+}
+
+@mixin toRem($property, $value) {
+  #{$property}: ($value / 16) + rem;
+}
+//  @include toRem(width, 400);
+
+@function pxToRem($pxValue) {
+  @return math.div($pxValue, 16px) * 1rem;
+}
+//  width: pxToRem(400px); // → 25rem

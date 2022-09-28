@@ -1,0 +1,30 @@
+@import 'mixins.scss';
+
+$xl: pxToRem(1170px);
+$lg: pxToRem(970px);
+$md: pxToRem(750px);
+
+// layout
+.container {
+}
+.wrap-content {
+  margin: 0 auto;
+  @include respond-to('xl') {
+    width: $xl;
+  }
+}
+
+// Header
+.header-menu {
+  position: fixed;
+}
+@include respond-to('xl') {
+  .header-menu {
+  }
+}
+
+// Banner
+.banner {
+  width: 100vw;
+  height: 100vh;
+}
