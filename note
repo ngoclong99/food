@@ -1,5 +1,6 @@
 styled-components
-toolkit
+toolkit 
+react-redux
 react-router-dom
 sass
 axios

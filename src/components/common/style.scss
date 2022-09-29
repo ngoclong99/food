@@ -1,5 +1,6 @@
 @import '/src/style/mixins.scss';
 
+// skeleton
 @keyframes skeleton-loading {
   0% {
     transform: translate(-37.5%);
@@ -41,8 +42,90 @@
   max-width: max-content;
   line-height: pxToRem(16px);
   border-radius: pxToRem(5px);
-  padding: pxToRem(20px);
   & > img {
+    padding: pxToRem(20px);
     opacity: 0.2;
+  }
+}
+
+// setting
+.text.orange_setting {
+  color: $orange;
+}
+.text.blue_setting {
+  color: $blue;
+}
+.text.green_setting {
+  color: $green;
+}
+.text.yellow_setting {
+  color: $yellow;
+}
+.bg.orange_setting {
+  background-color: $orange;
+}
+.bg.blue_setting {
+  background-color: $blue;
+}
+.bg.green_setting {
+  background-color: $green;
+}
+.bg.yellow_setting {
+  background-color: $yellow;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.setting {
+  position: fixed;
+  right: 0;
+  top: pxToRem(150px);
+  transition: 0.5s all ease;
+  &.active {
+    transform: translateX(100%);
+  }
+  &__theme {
+    position: relative;
+    background-color: rgba(50, 50, 50, 0.95);
+    box-shadow: 0px pxToRem(1px) pxToRem(4px) rgb(0 0 0 / 45%);
+    transition: all 0.5s;
+    height: auto;
+    padding: pxToRem(15px) pxToRem(25px);
+    &-text {
+      color: $white;
+      text-transform: capitalize;
+    }
+    &-selects {
+      display: flex;
+      padding: pxToRem(15px) 0;
+      gap: 0 pxToRem(7px);
+      &--box {
+        height: pxToRem(35px);
+        width: pxToRem(24px);
+        cursor: pointer;
+        border: 1px solid $white;
+      }
+    }
+    &-spin {
+      position: absolute;
+      padding: pxToRem(10px);
+      left: -50px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      &:hover{
+        opacity: 0.9;
+      }
+      & img {
+        width: pxToRem(30px);
+        height: pxToRem(30px);
+        animation: spin 2s infinite linear;
+      }
+    }
   }
 }

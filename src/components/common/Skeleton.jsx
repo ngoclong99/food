@@ -25,7 +25,7 @@ const renderCircle = (width, height, radius) => (
 )
 const renderImage = (width, height) => (
   <div className="skeleton img">
-    <img src={img} height={height} width={width} />
+    <img src={img} style={{ height: height, width: width }} />
   </div>
 )
 

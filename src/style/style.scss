@@ -1,9 +1,11 @@
 @import 'mixins.scss';
 
-$xl: pxToRem(1170px);
-$lg: pxToRem(970px);
-$md: pxToRem(750px);
-
+// common
+.font-16 {
+  font-size: pxToRem(16px);
+  font-weight: 400;
+  line-height: pxToRem(19px);
+}
 // layout
 .container {
 }
@@ -27,4 +29,10 @@ $md: pxToRem(750px);
 .banner {
   width: 100vw;
   height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  min-height: 100%;
 }

@@ -1,4 +1,12 @@
 @use 'sass:math';
+$xl: pxToRem(1170px);
+$lg: pxToRem(970px);
+$md: pxToRem(750px);
+$orange: #e75b1e;
+$blue: #1e69b8;
+$green: #8dc63f;
+$yellow: #fdcb03;
+$white: #ffffff;
 $breakpoints: (
   'sm': (
     min-width: 640px,
