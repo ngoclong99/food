@@ -1,11 +1,41 @@
 @import 'mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=The+Nautigal:wght@400;700&display=swap');
 
 // common
-.font-16 {
-  font-size: pxToRem(16px);
-  font-weight: 400;
-  line-height: pxToRem(19px);
+.font-12 {
+  @include font-style(12px, 400, 22px);
 }
+.font-16 {
+  @include font-style(16px, 400, 19px);
+}
+.font-18 {
+  @include font-style(18px, 400, 33px);
+}
+.font-18-800 {
+  @include font-style(18px, 800, 33px);
+}
+.font-14 {
+  @include font-style(14px, 500, 25px);
+}
+.font-74 {
+  @include font-style(74px, 900, 89px);
+}
+.font-52 {
+  @include font-style(52px, 700, 62px);
+}
+.font-20 {
+  @include font-style(20px, 600, 24px);
+}
+.font-14-400 {
+  @include font-style(14px, 400, 25px);
+}
+.font-22 {
+  @include font-style(22px, 500, 26px);
+}
+.font-nautigal {
+  font-family: 'The Nautigal', cursive;
+}
+
 // layout
 .container {
 }
@@ -35,4 +65,12 @@
   background-size: cover;
   height: 100vh;
   min-height: 100%;
+  display: grid;
+  place-content: center;
+  .title {
+    color: $white;
+    & > span {
+      
+    }
+  }
 }
