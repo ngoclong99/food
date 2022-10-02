@@ -44,7 +44,7 @@
 
   "banner": {
     "title": "Dinner with us",
-    "textTitle": ["Family_", "Officemates_"],
+    "textTitle": ["Family", "Officemates"],
     "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod",
     "thumbnail": "https://technext.github.io/food-funday/images/banner.jpg"
   },
@@ -52,6 +52,7 @@
   "about-us": {
     "name": "About Us",
     "title": "IT STARTED, QUITE SIMPLY, LIKE THIS...",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia, nostrud exercitation ullamco. Aenean commodo ligula eget dolor aenean massa. Cum sociis nat penatibu set magnis dis parturient montes, nascetur ridiculus mus. quam felisorat, ultricies nec, Aenean commodo ligula eget dolor penatibu set magnis is parturient montes, nascetur ridiculus mus. quam felisorat, ultricies nec, pellentesque eu, pretium quis, sem. quat massa quis enim. Donec vitae sapien ut libero venenatis fauci Nullam quis ante. Etiam sit amet rci eget eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia, nostrud exercitation ullamco.",
     "thumbnailSmall": "https://technext.github.io/food-funday/images/about-inset.jpg",
     "thumbnailBig": "https://technext.github.io/food-funday/images/about-main.jpg"
   },
