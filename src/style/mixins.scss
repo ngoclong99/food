@@ -1,35 +1,4 @@
 @use 'sass:math';
-$xl: pxToRem(1170px);
-$lg: pxToRem(970px);
-$md: pxToRem(750px);
-$orange: #e75b1e;
-$blue: #1e69b8;
-$green: #8dc63f;
-$yellow: #fdcb03;
-$white: #ffffff;
-$breakpoints: (
-  'sm': (
-    min-width: 640px,
-  ),
-  'md': (
-    min-width: 768px,
-  ),
-  'lg': (
-    min-width: 992px,
-  ),
-  'xl': (
-    min-width: 1280px,
-  ),
-) !default;
-
-@mixin respond-to($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media #{inspect(map-get($breakpoints, $breakpoint))} {
-      @content;
-    }
-  }
-}
-
 @mixin toRem($property, $value) {
   #{$property}: ($value / 16) + rem;
 }
@@ -46,3 +15,32 @@ $breakpoints: (
   @return math.div($pxValue, 16px) * 1rem;
 }
 //  width: pxToRem(400px)
+
+$orange: #e75b1e;
+$blue: #1e69b8;
+$green: #8dc63f;
+$yellow: #fdcb03;
+$white: #ffffff;
+$silver: #E6E6E6;
+$breakpoints: (
+  'sm': (
+    min-width: 576px,
+  ),
+  'md': (
+    min-width: 768px,
+  ),
+  'lg': (
+    min-width: 992px,
+  ),
+  'xl': (
+    min-width: 1200px,
+  ),
+) !default;
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+}

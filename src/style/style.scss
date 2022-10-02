@@ -1,63 +1,50 @@
 @import 'mixins.scss';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=The+Nautigal:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500');
+@import url('http://fonts.cdnfonts.com/css/nautilus-pompilius');
 // common
-.font-12 {
-  @include font-style(12px, 400, 22px);
-}
-.font-16 {
-  @include font-style(16px, 400, 19px);
-}
-.font-18 {
-  @include font-style(18px, 400, 33px);
-}
-.font-18-800 {
-  @include font-style(18px, 800, 33px);
-}
-.font-14 {
-  @include font-style(14px, 500, 25px);
-}
-.font-74 {
-  @include font-style(74px, 900, 89px);
-}
-.font-52 {
-  @include font-style(52px, 700, 62px);
-}
-.font-20 {
-  @include font-style(20px, 600, 24px);
-}
-.font-14-400 {
-  @include font-style(14px, 400, 25px);
-}
-.font-22 {
-  @include font-style(22px, 500, 26px);
-}
-.font-nautigal {
-  font-family: 'The Nautigal', cursive;
-}
 
-// layout
-.container {
+.font-nautigal {
+  font-family: 'Nautilus Pompilius', sans-serif;
 }
+// LoadingPage
+.loading-page {
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  position: fixed;
+  background-color: $white;
+  background-image: url('/src/assets/image/loader-animation.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+// layout
 .wrap-content {
-  margin: 0 auto;
+  width: 86%;
+  max-width: pxToRem(1280px);
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  @include respond-to('sm') {
+    width: pxToRem(540px);
+  }
+  @include respond-to('md') {
+    width: pxToRem(720px);
+  }
+  @include respond-to('lg') {
+    width: pxToRem(960px);
+  }
   @include respond-to('xl') {
-    width: $xl;
+    width: pxToRem(1140px);
   }
 }
-
 // Header
 .header-menu {
   position: fixed;
 }
-@include respond-to('xl') {
-  .header-menu {
-  }
-}
-
 // Banner
 .banner {
-  width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center top;
@@ -69,8 +56,61 @@
   place-content: center;
   .title {
     color: $white;
-    & > span {
-      
+    text-align: center;
+    padding-top: pxToRem(50px);
+    .text {
+      display: inline;
+    }
+  }
+  .description {
+    padding: pxToRem(40px) 0;
+    color: $white;
+    opacity: 0.8;
+    text-align: center;
+  }
+  .button-effect {
+    text-align: center;
+  }
+}
+//AboutUs
+.wrap-about-us {
+  background-color: $silver;
+  .about-us {
+    padding-top: pxToRem(90px);
+    padding-bottom: pxToRem(90px);
+    display: flex;
+    &__content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      .title {
+        padding: pxToRem(18px) 0;
+      }
+      .description {
+        opacity: 0.8;
+      }
+    }
+    &__img {
+      text-align: center;
+      flex: 1;
+      .skeleton {
+        width: 400px;
+        height: 400px;
+      }
+      .images {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+
+        & img:first-child {
+          width: 100%;
+          height: 100%;
+        }
+        & img:last-child {
+          position: absolute;
+        }
+      }
     }
   }
 }

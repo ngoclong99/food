@@ -7,9 +7,9 @@ import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 const themes = [ORANGE_SETTING, BLUE_SETTING, GREEN_SETTING, YELLOW_SETTING]
 
-function Setting() {
+export function Setting() {
   const theme = useSelector(getTheme)
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(true)
   const dispatch = useDispatch()
 
   const onSetTheme = (value) => {
@@ -40,4 +40,3 @@ function Setting() {
   )
 }
 
-export default Setting

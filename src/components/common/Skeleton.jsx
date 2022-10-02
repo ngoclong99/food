@@ -12,30 +12,29 @@ Skeleton.propTypes = {
   loading: PropTypes.bool,
 }
 
-const renderText = (count, width) => (
-  <ul className="skeletons" style={{ width: width }}>
+const renderText = (count, width = '150px') => (
+  <ul className="skeletons text" style={{ width: width }}>
     {Array.from(Array(count), (e, index) => (
       <li key={index} className="skeleton text" />
     ))}
   </ul>
 )
-const renderBox = (width, height) => <div className="skeleton" style={{ width: width, height: height }} />
-const renderCircle = (width, height, radius) => (
-  <div className="skeleton" style={{ width: width, height: height, borderRadius: radius }} />
+const renderBox = (width = '250px', height = '150px') => (
+  <div className="skeleton box" style={{ width: width, height: height }} />
 )
-const renderImage = (width, height) => (
-  <div className="skeleton img">
-    <img src={img} style={{ height: height, width: width }} />
+const renderCircle = (width = '150px', height = '150px', radius) => (
+  <div className="skeleton circle" style={{ width: width, height: height, borderRadius: radius }} />
+)
+const renderImage = (width = '100%', height = '100%') => (
+  <div className="skeleton img" style={{ height: height, width: width }}>
+    <img src={img} />
   </div>
 )
 
-function Skeleton({
+export function Skeleton({
   type = 'box',
   count = 1,
-  width = '100px',
-  height = '100px',
-  radius = '100%',
-  loading = false,
+  loading = true,
   children,
 }) {
   switch (type) {
@@ -51,5 +50,3 @@ function Skeleton({
       return <>{loading ? renderBox(width, height) : children}</>
   }
 }
-
-export default Skeleton

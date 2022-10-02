@@ -1,12 +1,10 @@
-// import PropTypes from 'prop-types';
-// index.propTypes = {};
-
-import { Banner } from '@/components/Banner'
+import { AboutUs, Banner } from '@/components'
 
 function index() {
   return (
     <>
       <Banner />
+      <AboutUs />
     </>
   )
 }

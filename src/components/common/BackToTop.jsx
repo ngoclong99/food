@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-index.propTypes = {};
+BackToTop.propTypes = {};
 
-function index(props) {
+export function BackToTop(props) {
   return <div></div>;
 }
 
-export default index;

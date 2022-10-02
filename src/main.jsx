@@ -5,6 +5,7 @@ import { store } from '@/store'
 import { Provider } from 'react-redux'
 import '@/style/reset.css'
 import '@/style/style.scss'
+import '@/style/font.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

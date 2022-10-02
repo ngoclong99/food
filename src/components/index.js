@@ -9,3 +9,4 @@ export * from './Newsletter';
 export * from './Reservations';
 export * from './Team';
 export * from './Today';
+export * from './Banner';

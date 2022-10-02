@@ -1,13 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Menu } from '@/components'
-import { Outlet } from 'react-router-dom'
-import Setting from '@/components/common/Setting'
+import { Setting } from '@/components/common'
 import '@/style/style.scss'
+import { Outlet } from 'react-router-dom'
 
-LayoutClient.propTypes = {}
-
-function LayoutClient(props) {
+function LayoutClient() {
   return (
     <>
       <Setting />

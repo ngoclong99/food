@@ -1,38 +1,54 @@
 import { bannerApi } from '@/api/banner'
-import { useEffect, useState } from 'react'
-import Skeleton from '@/components/common/Skeleton'
-import { useSelector } from 'react-redux'
-import { getTheme } from '@/reducers/settingSlice'
-import { getSettingTheme } from '@/utils/config'
-import { TEXT } from '@/utils/constant'
-import { useTypingText } from './common/useTypingText'
+import { ButtonEffect, ButtonScroll, TextEffect } from '@/components/common'
+import LoadingPage from '@/pages/LoadingPage'
+import { useEffect, useRef, useState } from 'react'
 
-Banner.propTypes = {}
-
-export function Banner(props) {
+export function Banner() {
   const [banner, setBanner] = useState({})
-  const [loading, setLoading] = useState(false)
-  const theme = useSelector(getTheme)
-  const { word } = useTypingText(['fast', 'reliable', 'affordable'], 40, 40)
+  const [loading, setLoading] = useState(true)
 
-  //
+  const currentIndexText = useRef(0)
+  const [render, setRender] = useState('')
+  const [currentRender, setCurrentRender] = useState(0)
+  const revert = useRef(false)
 
-  const [text, setText] = useState('')
-  const [fullText, setFullText] = useState(
-    'Your source of leading edge water and air treatment technology since 1994.',
-  )
-  const [index, setIndex] = useState(0)
-
-  //
   useEffect(() => {
-    if (index < fullText.length) {
-      setTimeout(() => {
-        setText(text + fullText[index])
-        setIndex(index + 1)
-      }, 40)
+    if (banner.textTitle) {
+      const addText = () => {
+        setTimeout(() => {
+          setRender(render + banner.textTitle[currentIndexText.current][currentRender])
+          setCurrentRender(currentRender + 1)
+          if (render.length + 1 === banner.textTitle[currentIndexText.current].length) {
+            setTimeout(() => {
+              revert.current = true
+              setCurrentRender(currentRender - 1)
+            }, 1000)
+          }
+        }, 150)
+      }
+      const subtractText = () => {
+        setTimeout(() => {
+          let newRender = render.slice(0, -1)
+          setRender(newRender)
+          if (render.length === 0) {
+            revert.current = false
+            setCurrentRender(0)
+            currentIndexText.current++
+          }
+        }, 150)
+      }
+
+      if (currentIndexText.current === banner.textTitle.length) {
+        currentIndexText.current = 0
+      }
+      if (currentRender < banner.textTitle[currentIndexText.current].length && !revert.current) {
+        addText()
+      }
+      if (revert.current) {
+        subtractText()
+      }
     }
-  }, [index])
-  //
+  }, [banner, currentRender, render])
 
   useEffect(() => {
     ;(async () => {
@@ -51,15 +67,18 @@ export function Banner(props) {
     }
   }, [])
   return (
-    <>
-      <div className="banner" style={{ backgroundImage: `url(${banner.thumbnail})` }}>
-        <p>
-          {banner.title}
-          <span className={`${getSettingTheme(TEXT, theme)}`}>{word}</span>
+    <div className="banner" style={{ backgroundImage: `url(${banner.thumbnail})` }}>
+      <LoadingPage loading={loading} />
+      <div className=" wrap-content">
+        <p className="title font-74 font-nautigal">
+          {banner.title}&nbsp;
+          <TextEffect text={render} className="font-nautigal" />
+          <span className="end-text">_</span>
         </p>
-        <p>{banner.description}</p>
-        <h2>{text}</h2>
+        <p className="description font-18">{banner.description}</p>
+        <ButtonEffect text="book my table" />
+        <ButtonScroll />
       </div>
-    </>
+    </div>
   )
 }

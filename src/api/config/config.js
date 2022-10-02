@@ -3,7 +3,6 @@ import axios from 'axios';
 
 const axiosClient = axios.create({
   baseURL: API_URL,
-  timeout: 3000,
 });
 
 axiosClient.interceptors.request.use(
