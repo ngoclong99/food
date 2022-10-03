@@ -78,6 +78,18 @@
         "thumbnail": "https://technext.github.io/food-funday/images/special-menu-3.jpg",
         "name": "SALMON STEAK",
         "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod"
+      },
+      {
+        "todayId": 4,
+        "thumbnail": "https://technext.github.io/food-funday/images/special-menu-2.jpg",
+        "name": "VEG",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod"
+      },
+      {
+        "todayId": 5,
+        "thumbnail": "https://technext.github.io/food-funday/images/special-menu-3.jpg",
+        "name": "SALMON",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod"
       }
     ]
   },
