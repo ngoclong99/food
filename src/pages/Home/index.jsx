@@ -1,10 +1,11 @@
-import { AboutUs, Banner } from '@/components'
+import { AboutUs, Banner, Today } from '@/components'
 
 function index() {
   return (
     <>
       <Banner />
       <AboutUs />
+      <Today />
     </>
   )
 }

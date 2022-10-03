@@ -34,9 +34,19 @@
     line-height: pxToRem(16px);
     border-radius: pxToRem(5px);
     margin-top: pxToRem(10px);
-    // & + .skeleton.text {
-    // }
   }
+}
+.skeleton.text {
+  width: pxToRem(150px);
+}
+.skeleton.box {
+  width: pxToRem(150px);
+  height: pxToRem(50px);
+}
+.skeleton.circle {
+  width: pxToRem(50px);
+  height: pxToRem(50px);
+  border-radius: 100%;
 }
 .skeleton.img {
   line-height: pxToRem(16px);
@@ -217,5 +227,29 @@
   }
   @include respond-to('lg') {
     display: block;
+  }
+}
+
+// Carousel
+.wrap-carousel {
+  overflow: hidden;
+  width: 100%;
+  .carousel {
+    width: 100%;
+    color: $white;    
+    float: left;
+
+    &__item {
+      float: left;
+      border: pxToRem(3px) solid $white;
+      width: calc(calc(100% / 3) - pxToRem(6px));
+      // margin: 0 pxToRem(50px); 
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }

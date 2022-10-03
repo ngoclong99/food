@@ -1,12 +1,8 @@
-import React, { useState } from 'react'
-import PropTypes from 'prop-types'
-import { Skeleton, TextEffect } from '@/components/common'
 import { aboutApi } from '@/api/about'
-import { useEffect } from 'react'
+import { Skeleton, TextEffect } from '@/components/common'
+import { useEffect, useState } from 'react'
 
-AboutUs.propTypes = {}
-
-export function AboutUs(props) {
+export function AboutUs() {
   const [about, setAbout] = useState({})
   const [loading, setLoading] = useState(true)
 
@@ -28,18 +24,18 @@ export function AboutUs(props) {
     <div className="wrap-about-us">
       <div className="wrap-content about-us">
         <div className="about-us__content">
-          <Skeleton type="box" height="40px" width="40%" loading={loading}>
+          <Skeleton type="box" loading={loading}>
             <TextEffect className="font-nautigal font-52" text={about.name} />
           </Skeleton>
-          <Skeleton type="text" loading={loading} width="30%">
+          <Skeleton type="text" loading={loading}>
             <p className="title font-20">{about.title}</p>
           </Skeleton>
-          <Skeleton type="text" count={6} width="80%" loading={loading}>
+          <Skeleton type="text" count={6} loading={loading}>
             <p className="description font-14-400">{about.description}</p>
           </Skeleton>
         </div>
         <div className="about-us__img">
-          <Skeleton type="image" loading={true}>
+          <Skeleton type="image" loading={loading}>
             <div className="images">
               <img src={about.thumbnailBig} />
               <img src={about.thumbnailSmall} />

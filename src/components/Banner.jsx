@@ -70,11 +70,11 @@ export function Banner() {
     <div className="banner" style={{ backgroundImage: `url(${banner.thumbnail})` }}>
       <LoadingPage loading={loading} />
       <div className=" wrap-content">
-        <p className="title font-74 font-nautigal">
+        <div className="title font-74 font-nautigal">
           {banner.title}&nbsp;
           <TextEffect text={render} className="font-nautigal" />
           <span className="end-text">_</span>
-        </p>
+        </div>
         <p className="description font-18">{banner.description}</p>
         <ButtonEffect text="book my table" />
         <ButtonScroll />

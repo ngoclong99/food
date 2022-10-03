@@ -3,7 +3,10 @@
   #{$property}: ($value / 16) + rem;
 }
 //  @include toRem(width, 400);
-
+@function pxToRem($pxValue) {
+  @return math.div($pxValue, 16px) * 1rem;
+}
+//  width: pxToRem(400px)
 @mixin font-style($size, $weight, $height) {
   font-size: pxToRem($size);
   font-weight: $weight;
@@ -11,17 +14,18 @@
 }
 //  @include font-style(16px, 400, 18px);
 
-@function pxToRem($pxValue) {
-  @return math.div($pxValue, 16px) * 1rem;
+// common
+@mixin pdWrap {
+  padding-top: pxToRem(90px);
+  padding-bottom: pxToRem(90px);
 }
-//  width: pxToRem(400px)
 
 $orange: #e75b1e;
 $blue: #1e69b8;
 $green: #8dc63f;
 $yellow: #fdcb03;
 $white: #ffffff;
-$silver: #E6E6E6;
+$silver: #e6e6e6;
 $breakpoints: (
   'sm': (
     min-width: 576px,
