@@ -57,26 +57,30 @@
     "thumbnailBig": "https://technext.github.io/food-funday/images/about-main.jpg"
   },
 
-  "today": [
-    {
-      "todayId": 1,
-      "thumbnail": "https://technext.github.io/food-funday/images/special-menu-2.jpg",
-      "name": "ITALIAN PIZZA",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod"
-    },
-    {
-      "todayId": 2,
-      "thumbnail": "https://technext.github.io/food-funday/images/special-menu-1.jpg",
-      "name": "VEG. ROLL",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod"
-    },
-    {
-      "todayId": 3,
-      "thumbnail": "https://technext.github.io/food-funday/images/special-menu-3.jpg",
-      "name": "SALMON STEAK",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod"
-    }
-  ],
+  "today": {
+    "name": "Today's Special",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia,nostrud exercitation ullamco.",
+    "data": [
+      {
+        "todayId": 1,
+        "thumbnail": "https://technext.github.io/food-funday/images/special-menu-2.jpg",
+        "name": "ITALIAN PIZZA",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod"
+      },
+      {
+        "todayId": 2,
+        "thumbnail": "https://technext.github.io/food-funday/images/special-menu-1.jpg",
+        "name": "VEG. ROLL",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod"
+      },
+      {
+        "todayId": 3,
+        "thumbnail": "https://technext.github.io/food-funday/images/special-menu-3.jpg",
+        "name": "SALMON STEAK",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod"
+      }
+    ]
+  },
 
   "menu": {
     "name": "Our Menu",
